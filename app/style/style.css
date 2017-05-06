@@ -1,0 +1,17 @@
+/*-----------------------------------------*/
+.weather-place {
+  width: 90%;
+  margin: 0 0 0 auto; }
+
+nav {
+  display: flex;
+  width: 50%;
+  margin: 0 auto; }
+  nav > div {
+    width: 90%;
+    margin: auto; }
+
+@media (min-width: 1024px) {
+  .weather-place {
+    width: 80%;
+    margin: 0 0 0 auto; } }

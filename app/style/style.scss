@@ -1,0 +1,56 @@
+$small-width: 320px;
+$medium-width: 360px;
+$large-width: 410px;
+$desktop-width: 1024px;
+
+@mixin small-width {
+  @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium-width {
+  @media  (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
+    @content;
+  }
+}
+@mixin large-width {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+@mixin desktop-width {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+/*-----------------------------------------*/
+
+.weather-place{
+  width: 90%;
+  margin: 0 0 0 auto;
+}
+
+nav{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  >div{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@include desktop-width(){
+  .weather-place{
+    width: 80%;
+    margin: 0 0 0 auto;
+  }
+
+
+}
+
+
+
+
